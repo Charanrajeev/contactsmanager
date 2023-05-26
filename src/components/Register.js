@@ -17,8 +17,8 @@ const Register = (props) => {
           alert("Registratin Success")
           console.log(res.data);
         }).catch(err=>{
-            console.log(props.children);
-        props.errorHandler(err.response.data.message);
+            alert(`Registration Failed! ${err.response.data.message}`)
+      
     })
     }
     return (
